@@ -1,0 +1,8 @@
+Tween:
+
+when we talk about Animation so we have one point from where we start our animation and end at some point.
+so to calculate the each vale in between starting state to end state we use a "Tween"
+"Tween" helps to define all the values in between an animation's start and end values.
+
+EXAMPLE:
+Create an animation that shows text size increases from 16 to 32.

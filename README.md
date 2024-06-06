@@ -12,6 +12,21 @@ interfaces.
 This repository serves as a comprehensive guide to various basic widgets available in Flutter. Each
 widget is explained with examples and use cases to help you grasp their functionality and usage.
 
+# **Running Examples**
+
+## **To run a specific example, use the following command:**
+
+## flutter run --dart-define=EXAMPLE=<WidgetName>
+
+**Replace <WidgetName> with the name of the widget you want to run, excluding the word "Example".**
+
+## For example, if the widget name is IsolateRunExample, you should use IsolateRun as the example name:
+
+## **flutter run --dart-define=EXAMPLE=IsolateRun**
+
+**This command corresponds to the IsolateRun example, where the widget name is IsolateRunExample (
+remove "Example" from it).**
+
 ## Table of Contents
 
 1. Tween

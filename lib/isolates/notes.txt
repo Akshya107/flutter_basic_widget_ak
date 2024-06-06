@@ -1,0 +1,57 @@
+
+
+Isolate:
+
+So we know that all of the code that we wrote and the framework code, All of this is executed on a single thread called UI thread
+So what if you have large computation data which may block UI, which can lead to dropped frames in result to slow down the application so to overcome this problem we have Isolate bu which can perform parallel operation which can be used in future once it's ready.
+Isolates never shares memory that why it's called Isolate means Isolated
+
+
+We have two ways to initialize the isolates
+1.Isolate.run()  // this is recommended for single computation on separate thread.
+2.Isolate.spawn() // this is to create an isolate that will handle multiple messages over a time.
+
+
+1. Isolate.run()
+*****************
+This static method requires one argument a callback that will be run on the newly spawned isolate.
+
+
+Isolate.run(a callback that will be run inside in it);
+Like we did in example:
+ await Isolate.run(
+                    () => DoSomeCal().someCal(12),
+                  );
+
+2. Isolate.spawn()
+******************
+This static method requires two argument,
+one is callBackFunction (that will be executed in the spawned isolate and this function should accept a single arg of type SendPort which is use by isolate to communicate with main thread )
+and
+other is SendPort of main thread's ReceiverPort to send the data back to main thread.
+so initially we create an object for ReceivingPortClass like
+ ReceivePort receivePort = ReceivePort();  // this is our receivePort of main thread, by listening this port we can have result from isolate
+
+ then we call Isolate.spawn(callBackFunction, receivePort.sendPort);
+
+
+void callBackFunction(SendPort sendPort){
+ //perform operation once result ready
+
+ sendPort.send(result);
+}
+
+and this result will be listenBy listener of receiverPort of main thread
+receivePort.listen((result){
+  //use your result
+});
+
+
+Like we did in example:
+ Isolate.spawn(
+                      DoSomeCal().someCalBySpawn, receivePort.sendPort);
+
+
+
+
+
