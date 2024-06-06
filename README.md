@@ -16,9 +16,9 @@ widget is explained with examples and use cases to help you grasp their function
 
 ## **To run a specific example, use the following command:**
 
-## flutter run --dart-define=EXAMPLE=<WidgetName>
+## flutter run --dart-define=EXAMPLE=WidgetName
 
-**Replace <WidgetName> with the name of the widget you want to run, excluding the word "Example".**
+**Replace WidgetName with the name of the widget that you want to run, excluding the word "Example".**
 
 ## For example, if the widget name is IsolateRunExample, you should use IsolateRun as the example name:
 
