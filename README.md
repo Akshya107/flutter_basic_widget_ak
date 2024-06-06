@@ -30,7 +30,7 @@ remove "Example" from it).**
 ## Table of Contents
 
 1. [x] Tween
-2. [ ] Isolate
+2. [x] Isolate
 3. [ ] SegmentedButton
 4. [ ] DropdownMenu
 5. [ ] OverlayPortal
