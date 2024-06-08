@@ -36,7 +36,7 @@ remove "Example" from it).**
 5. [x] OverlayPortal
 6. [ ] Gap // it's package not widget so we will cover at the end.
 7. [ ] CallBackShortcuts // it's for desktop so we will cover at the end.
-8. [ ] RawMagnifier
+8. [x] RawMagnifier
 9. [ ] Future Builder
 10. [ ] Actions
 11. [ ] Shortcuts

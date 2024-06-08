@@ -1,0 +1,29 @@
+RawMagnifier:
+
+To see small text we know Flutter after 3.17 comes by default with magnifier lens when we long press on text but
+what if we want custom shape or size of that magnifier then RawMagnifier widget comes in picture.
+
+Example:
+
+Stack(
+    children :[
+        GestureDetector(
+             onPanUpdate:showMagnifier, // showMagnifier set to true
+             onPanEnd: showMagnifier , // showMagnifier set to false so that on end magnifier disappear
+             child: WidgetNeedToMagnify()
+             ),
+
+        if(_showMagnifier)Positioned(
+            left:dragGesturePosition.dx
+            right:dragGesturePosition.dy
+            child: RawMagnifier(
+                            // to decorate
+                            decoration: MagnifierDecoration(),
+                            magnificationScale:1
+                            size:Size(),
+                    )
+            )
+
+
+       ]
+)
