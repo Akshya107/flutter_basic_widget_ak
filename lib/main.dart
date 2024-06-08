@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_basic_widget_ak/dropdown_menu/dropdown_menu_example.dart';
 import 'package:flutter_basic_widget_ak/isolates/isolate_run_example.dart';
 import 'package:flutter_basic_widget_ak/isolates/isolate_spawn_example.dart';
 import 'package:flutter_basic_widget_ak/segmented_button/segmented_button_example.dart';
@@ -18,6 +19,9 @@ void main() {
       break;
     case 'SegmentedButton':
       runApp(const MyApp(home: SegmentedButtonExample()));
+      break;
+    case 'DropdownMenu':
+      runApp(const MyApp(home: DropdownMenuExample()));
       break;
     default:
       print('Invalid example name provided. Running Tween by default.');

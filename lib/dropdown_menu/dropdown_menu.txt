@@ -1,0 +1,20 @@
+DropDownMenu:
+
+When our requirements is like we need to select an option from list of option so in small list case
+
+we can use radio and segmented button but what if we have large list so then Dropdown comes into picture.
+
+Example:
+
+DropDownMenu(
+    dropdownMenuEntries: <DropdownMenuEntry<String>>[
+      DropdownMenuEntry(value:"One", label:'One'),
+      DropdownMenuEntry(value:"two", label:'Two'),
+      DropdownMenuEntry(value:"three", label:'Three'),
+    ]
+)
+
+
+
+
+
