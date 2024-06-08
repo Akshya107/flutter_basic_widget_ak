@@ -34,8 +34,8 @@ remove "Example" from it).**
 3. [x] SegmentedButton
 4. [x] DropdownMenu
 5. [x] OverlayPortal
-6. [ ] Gap
-7. [ ] CallBackShortcuts
+6. [ ] Gap // it's package not widget so we will cover at the end.
+7. [ ] CallBackShortcuts // it's for desktop so we will cover at the end.
 8. [ ] RawMagnifier
 9. [ ] Future Builder
 10. [ ] Actions
@@ -141,3 +141,4 @@ remove "Example" from it).**
 110. [ ] Wrap
 111. [ ] Expanded
 112. [ ] SafeArea
+113. [ ] Draggable
