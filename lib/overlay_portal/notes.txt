@@ -1,0 +1,20 @@
+OverlayPortal:
+
+Generally child widget is positioned to it's parent but sometime we want logically related to it's
+parents but visually separate like tool-tip or floating menu. so in that case we use Overlay Portal.
+
+OverlayPortal is a widget that allow us to paint a widget anywhere on the screen on top of a widgets.
+Add an overlay by passing OverlayPortal widget as child to the widgets that's associated with it's like Icon, Button.
+
+Example:
+
+
+ElevatedButton(   //this is our widget on which we want an OverlayPortal that's why we passing OverlayPortal as child to this button
+    child: OverlayPortal(
+        controller : overlayController // provide a controller to toggle this overlay
+        overlayChildBuilder: (BuildContext context){
+                     return Text("This is an overlay");
+            }
+        )
+    )
+

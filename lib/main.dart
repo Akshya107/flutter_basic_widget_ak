@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_basic_widget_ak/dropdown_menu/dropdown_menu_example.dart';
 import 'package:flutter_basic_widget_ak/isolates/isolate_run_example.dart';
 import 'package:flutter_basic_widget_ak/isolates/isolate_spawn_example.dart';
+import 'package:flutter_basic_widget_ak/overlay_portal/overlay_portal_example.dart';
 import 'package:flutter_basic_widget_ak/segmented_button/segmented_button_example.dart';
 import 'package:flutter_basic_widget_ak/tween/tween_example.dart';
 
@@ -22,6 +23,9 @@ void main() {
       break;
     case 'DropdownMenu':
       runApp(const MyApp(home: DropdownMenuExample()));
+      break;
+    case 'OverlayPortal':
+      runApp(const MyApp(home: OverlayPortalExample()));
       break;
     default:
       print('Invalid example name provided. Running Tween by default.');
