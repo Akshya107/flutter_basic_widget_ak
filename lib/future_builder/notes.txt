@@ -1,0 +1,21 @@
+FutureBuilder:
+
+To paint future task we have special widget for it that is FutureBuilder.
+So we can widget that handles Future is known as FutureBuilder.
+
+Example:
+
+FutureBuilder<Data Type that your future will return>(
+        future: our future function that will provide us result or an error in future like an API call function
+        builder:(BuildContext context, AsyncSnapshot<Data type which your future will return like SomeModel in API call> snapshot){
+            // based on snapshot data we can show the ui like for error ,success and loading by default
+            if(snapshot.hasData){
+                    return Text("Success UI");
+                }
+            if(snapshot.hasError){
+                    return Text("an error occurred");
+                }
+            return CircularProgressIndicator(); // for other states or you can also check the connection state
+            }
+
+        )

@@ -37,7 +37,7 @@ remove "Example" from it).**
 6. [ ] Gap // it's package not widget so we will cover at the end.
 7. [ ] CallBackShortcuts // it's for desktop so we will cover at the end.
 8. [x] RawMagnifier
-9. [ ] Future Builder
+9. [x] Future Builder
 10. [ ] Actions
 11. [ ] Shortcuts
 12. [ ] Focus
@@ -142,3 +142,4 @@ remove "Example" from it).**
 111. [ ] Expanded
 112. [ ] SafeArea
 113. [ ] Draggable
+114. [ ] NavigationBar
