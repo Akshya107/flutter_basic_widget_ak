@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_basic_widget_ak/isolates/isolate_run_example.dart';
 import 'package:flutter_basic_widget_ak/isolates/isolate_spawn_example.dart';
+import 'package:flutter_basic_widget_ak/segmented_button/segmented_button_example.dart';
 import 'package:flutter_basic_widget_ak/tween/tween_example.dart';
 
 void main() {
@@ -14,6 +15,9 @@ void main() {
       break;
     case 'IsolateSpawn':
       runApp(const MyApp(home: IsolateSpawnExample()));
+      break;
+    case 'SegmentedButton':
+      runApp(const MyApp(home: SegmentedButtonExample()));
       break;
     default:
       print('Invalid example name provided. Running Tween by default.');

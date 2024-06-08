@@ -31,7 +31,7 @@ remove "Example" from it).**
 
 1. [x] Tween
 2. [x] Isolate
-3. [ ] SegmentedButton
+3. [x] SegmentedButton
 4. [ ] DropdownMenu
 5. [ ] OverlayPortal
 6. [ ] Gap

@@ -1,0 +1,22 @@
+Segmented Button:
+
+It's a simple button widget which provide the multi select functionality.
+
+
+Example:
+
+  SegmentedButton(
+  multiSelectionEnabled: true,
+  segments:
+  //List of button segment
+        <ButtonSegment>[
+         ButtonSegment(
+           value:'Primary',
+             // can also add icon
+            icon: icon
+          // can add label or both icon and label but one both should be there
+            label:Text("Primary")
+                 ),
+
+         ]
+     )
