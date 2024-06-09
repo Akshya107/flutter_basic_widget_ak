@@ -38,8 +38,8 @@ remove "Example" from it).**
 7. [ ] CallBackShortcuts // it's for desktop so we will cover at the end.
 8. [x] RawMagnifier
 9. [x] Future Builder
-10. [ ] Actions
-11. [ ] Shortcuts
+10. [ ] Actions // it's for desktop so we will cover at the end.
+11. [ ] Shortcuts // it's for desktop so we will cover at the end.
 12. [ ] Focus
 13. [ ] Linear Gradient
 14. [ ] Autocomplete
@@ -93,7 +93,7 @@ remove "Example" from it).**
 62. [ ] Data Table
 63. [ ] Container
 64. [ ] ListTile
-65. [ ] ListView
+65. [x] ListView
 66. [ ] Fractionally SizedBox
 67. [ ] AnimatedOpacity
 68. [ ] Stack
@@ -143,3 +143,4 @@ remove "Example" from it).**
 112. [ ] SafeArea
 113. [ ] Draggable
 114. [ ] NavigationBar
+115. [ ] TextStyle

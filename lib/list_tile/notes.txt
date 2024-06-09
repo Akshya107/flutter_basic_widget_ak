@@ -1,0 +1,15 @@
+ListTile:
+
+Sometime we need a widget that should contain leading widget and text in column and end icon with
+material so we do the same it will take much time so that's why we have one more widget to solve
+this problem is know as ListTile.
+
+ListTile is a widget that provide material design list spec like title, sub-title leading and so on.
+
+Example:
+
+ListTile(
+      // can pass params based on your requirements like leading and title
+      leading: Icon(Icons.access_time_filled),
+      title: // it's also a widget type
+    )
