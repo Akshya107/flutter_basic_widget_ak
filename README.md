@@ -92,8 +92,8 @@ remove "Example" from it).**
 61. [ ] Slider, RangeSlider and Cupertino Slider
 62. [ ] Data Table
 63. [ ] Container
-64. [ ] ListTile
-65. [x] ListView
+64. [x] ListTile
+65. [ ] ListView
 66. [ ] Fractionally SizedBox
 67. [ ] AnimatedOpacity
 68. [ ] Stack
