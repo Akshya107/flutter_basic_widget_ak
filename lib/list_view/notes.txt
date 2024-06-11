@@ -1,0 +1,40 @@
+ListView:
+
+Whenever we have list of items wants to show then we can use ListView. it comes with scroll behaviour
+in both direction (horizontal and vertical by providing direction to scrollDirection param of ListView ).
+Also we can change the behaviour of scrolling by providing value to physics param.
+
+If your list items is in repeated then we should use ListView.builder instead ListView and if you want
+a separation between each list item then you should use ListView.separated.
+
+
+Example:
+
+ListView(
+    children:[
+        item1,
+        item2,
+        item3,
+        ....
+       ]
+    )
+
+ListView.builder(
+    builder:(BuildContext context, int index){
+          return Item();
+        },
+    itemCount: 2 // how many items that you want to need to be build
+    )
+
+
+ListView.separated(
+    builder:(BuildContext context, int index){
+          return Item();
+        },
+    separateBuilder:(BuildContext context, int index){
+            return SizedBox(height:20); // will create gap between every item by height 20
+        }
+    itemCount: 2 // how many items that you want to need to be build
+    )
+
+

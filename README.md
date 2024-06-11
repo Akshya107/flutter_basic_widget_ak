@@ -93,7 +93,7 @@ remove "Example" from it).**
 62. [ ] Data Table
 63. [ ] Container
 64. [x] ListTile
-65. [ ] ListView
+65. [x] ListView
 66. [ ] Fractionally SizedBox
 67. [ ] AnimatedOpacity
 68. [ ] Stack
