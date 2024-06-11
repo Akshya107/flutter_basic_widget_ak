@@ -10,6 +10,7 @@ import 'package:flutter_basic_widget_ak/list_view/list_view_separated_example.da
 import 'package:flutter_basic_widget_ak/my_app.dart';
 import 'package:flutter_basic_widget_ak/overlay_portal/overlay_portal_example.dart';
 import 'package:flutter_basic_widget_ak/raw_magnifier/raw_magnifier_example.dart';
+import 'package:flutter_basic_widget_ak/re_orderable_list_view/re_orderable_list_view_example.dart';
 import 'package:flutter_basic_widget_ak/segmented_button/segmented_button_example.dart';
 import 'package:flutter_basic_widget_ak/tween/tween_example.dart';
 
@@ -51,6 +52,9 @@ void main() {
       break;
     case 'ListViewSeparated':
       runApp(const MyApp(home: ListViewSeparatedExample()));
+      break;
+    case 'ReOrderableListView':
+      runApp(const MyApp(home: ReOrderableListViewExample()));
       break;
     default:
       runApp(const MyApp(home: TweenExample()));

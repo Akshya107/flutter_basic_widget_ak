@@ -1,0 +1,19 @@
+ReOrderableListView:
+
+As we all used ListView but what if our requirements is to re-order the list view by dragging and
+dropping then ReOrderableListView comes into picture.
+
+
+Example:
+
+ReorderableListView(
+    onReorder: (oldIndex, newIndex){
+            setState((){
+            updateListItems(oldIndex, newIndex);
+            });
+        },
+    children:[
+        list of items, must have unique key
+    ]
+   )
+
